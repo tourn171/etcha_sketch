@@ -3,8 +3,8 @@ var grid = $("#grid");
 var s = 16;
 var boxSize = (460/s)-2;
 var color = "#FFFFFF";
-$(".box").height(boxSize+"px");
-$(".box").width(boxSize);
+$(".box").css("height", boxSize);
+$(".box").css("width", boxSize);
 
 console.log(s);
 
@@ -50,12 +50,14 @@ $(document).ready(function(){
 });
 
 var dgrid = function(){
-	for( i = 1; i <= (s*s); i++) {
+	for( i = 1; i <= s*2; i++) {
+		for(y = 1; y <= s; y++) {
 			grid.append($("<div class=\"box\"></div>"));
+		}
 	}
 	boxSize = (grid.height()/s)-2;
-	$(".box").height(boxSize+"px");
-	$(".box").width(boxSize+"px");
+	$(".box").css("height", boxSize);
+	$(".box").css("width", boxSize);
 	draw();
 };
 
