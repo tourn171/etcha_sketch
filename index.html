@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="index.css">
+		<script src ="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	</head>
+	<body>
+	<div class="everyting">
+		<div class= "side">
+		<div class = "title"><span><p>Etch a Sketch</p></span></div>
+			<div class="buttons"><span>Settings:</span> <div class="spacer"></div>
+				<div id="clear">Clear Board</div>
+				<div class="glow">
+				<div id="color">Set Color				
+				<div class="menu">
+					<form>
+						<input type="radio" name="color" value="red">Red</radio>
+						<input type="radio" name="color" value="green">Green</radio>
+						<input type="radio" name="color" value="blue">Blue</radio>
+						<input type="radio" name="color" value="black">Black</radio>
+						<input type="radio" name="color" value="white">White</radio>
+						<input type="radio" name="color" value="rand">Random</radio>
+					</form>
+				</div></div></div>
+				<div id="set_size">
+					<p>Set Size:</p>
+					<p> *Sizes above 100 are generally laggy </p>
+					<form id="sizsub">
+						<input type="text" id="size" name="size" placeholder="Please enter a size less than 128"></input>
+					</form><br>
+					
+					<div class="glow button">Draw It</div>
+				</div>
+			<p> Hover your mouse over the borderd area on the etch a sketch to draw. You can clear your drawing at anytime by selecting Clear Board and you can dynamicaly change colors with Set Color</p>
+			<p>Thanks for viewing my project. You can find more of my work at:</p>
+			<a href="https://github.com/tourn171">Github</a>
+				<p>This etcha sketch project is brought to you by:</p>
+				<a href="http://www.theodinproject.com/web-development-101/javascript-and-jquery?ref=lnav">The Odin Project</a>
+
+			</div>
+			
+
+			
+		</div>
+		<div class= "content">
+			<div class="wrapper">
+				<div class="center">
+					<div class="outer">
+						<div class="canvas">
+							<div id="grid"></div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div id="left_button"></div>
+		<div id="right_button"></div>
+		</div>
+		<div id="sig"><p>Etch-a-Sketch</p></div>
+		<script src="index.js"></script>
+
+
+	</body>
+</html>
